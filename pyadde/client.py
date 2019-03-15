@@ -145,8 +145,8 @@ class AddeClient():
 
         try:
             '''
-            ADDE protocol is stateless 100%, that simply menas that after servicing a goven request the rerver
-            sends an RST and closes down. No other fancy stuff. Thsi is whi the next to lines are here and not in __init__ and __senter__
+            ADDE protocol is stateless 100%, that simply means that after servicing a given request the rerver
+            sends an RST and closes down. No other fancy stuff. This is why the next to lines are here and not in __init__ and __aenter__
             
             '''
             self.con = asyncio.open_connection(host=self.host, port=self.port)
@@ -162,9 +162,9 @@ class AddeClient():
                     await self.writer.drain()
                     with async_timeout.timeout(timeout=timeout):
                         if not read_in_chunks:
-
-                            data = await self.reader.read()
                             # # read at once
+                            data = await self.reader.read()
+
                             total_data.write(data)
                         else:
                             # read in chunks
