@@ -1,6 +1,6 @@
 This library is a python 3 implementation of UniWISC's ADDE client binary protocol.
 The ADDE is little documented and is quite capable (it can resample images on the fly for example)
-This lib can free you from  McIDASV and McIDAsX but it is not as stab;e/test/edvanced as thi sofware pacjages are.
+This lib can free you from  McIDASV and McIDAsX but it is not as stable/tested/advanced as this software packages are.
 It uses python 3 (3.6 and onwards is best) and works in an asynchronous manner
 
 SSEC has quite many ADDE servers and UCAR has some as well.
