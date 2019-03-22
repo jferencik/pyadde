@@ -10,6 +10,5 @@ SSEC has quite many ADDE servers and UCAR has some as well.
 The lib depends on pyarea lib because ADDE actualy transfers McIDAS AREA files.
 
 
-Ioan Ferencik
 
 
